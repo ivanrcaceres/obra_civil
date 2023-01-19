@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   <data>
+
+       <!-- DETALLE CERTIFICADO ########################################################################## -->
+       <record model="ir.ui.view" id="certificado_form_view">
+        <field name="name">detallecertificado.form</field>
+        <field name="model">obra_civil.detallecertificado</field>
+        <field name="arch" type="xml">
+            <form string="Detallecertificado Form">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="quantity"/>
+                    </group>
+
+                    <!-- <group string="Proyectos"> -->
+                       <!-- <field name="proyecto_ids" context="{'default_partner_id':partner_id, 'default_privacy_visibility':'portal'}" />
+                    -->
+                       <!-- <field name="proyecto_ids" context="{'default_partner_id':partner_id}" widget="many2many" /> -->
+                    <!-- </group> -->
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="detallecertificado_tree_view" model="ir.ui.view">
+            <field name="name">detallecertificado.tree</field>
+            <field name="model">obra_civil.detallecertificado</field>
+            <field name="arch" type="xml">
+                <tree string="detallecertificado" editable="top" >
+                    <field name="product_id"/>
+                    <field name="quantity"/>
+                </tree>
+            </field>
+    </record>
+
+    <!-- window action -->
+    <!--
+        The following tag is an action definition for a "window action",
+        that is an action opening a view or a set of views
+    -->
+    <record model="ir.actions.act_window" id="detallecertificado_list_action">
+        <field name="name">detallecertificado</field>
+        <field name="res_model">obra_civil.detallecertificado</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Detallecertificado</p>
+        </field>
+    </record>
+
+
+
+
+
+       <!-- CERTIFICADO ################################################################################## -->
+
+
+
+    <record model="ir.ui.view" id="certificado_form_view">
+        <field name="name">certificado.form</field>
+        <field name="model">obra_civil.certificado</field>
+        <field name="arch" type="xml">
+            <form string="Certificado Form">
+                <sheet>
+                    <group>
+                        <field name="project"/>
+                        <field name="fecha"/>
+                        <field name="detallecertificado_ids"/>
+                    </group>
+
+                    <!-- <group string="Proyectos"> -->
+                       <!-- <field name="proyecto_ids" context="{'default_partner_id':partner_id, 'default_privacy_visibility':'portal'}" />
+                    -->
+                       <!-- <field name="proyecto_ids" context="{'default_partner_id':partner_id}" widget="many2many" /> -->
+                    <!-- </group> -->
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="certificado_tree_view" model="ir.ui.view">
+            <field name="name">certificado.tree</field>
+            <field name="model">obra_civil.certificado</field>
+            <field name="arch" type="xml">
+                <tree string="certificado">
+                    <field name="fecha"/>
+                    <field name="project"/>
+                </tree>
+            </field>
+    </record>
+
+    <!-- window action -->
+    <!--
+        The following tag is an action definition for a "window action",
+        that is an action opening a view or a set of views
+    -->
+    <record model="ir.actions.act_window" id="certificado_list_action">
+        <field name="name">certificado</field>
+        <field name="res_model">obra_civil.certificado</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Certificado</p>
+        </field>
+    </record>
+
+    <!-- top level menu: no parent -->
+    <menuitem id="certificado_menu" name="Certificado"/>
+    <!-- A first level in the left side menu is needed
+         before using action= attribute -->
+    <menuitem id="certificado2_menu" name="Certificado"
+              parent="certificado_menu"/>
+    <!-- the following menuitem should appear *after*
+         its parent openacademy_menu and *after* its
+         action course_list_action -->
+    <menuitem id="certificado3_menu" name="Certificado" parent="certificado2_menu"
+              action="certificado_list_action"/>
+
+
+       <!-- aqui le herencia de la vista de las nuevas tareas -->
+       <record id="tarea_new_02_" model="ir.ui.view">
+            <field name="name">tarea.form_020</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='project_id']" position="after">
+                        <field name="producto_id"/>
+                </xpath>
+            </field>
+        </record>
+
+
+
+
+
+
+   </data>
+
+</odoo>

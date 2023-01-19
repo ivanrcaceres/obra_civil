@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="detalle_proyectos_form_view">
+                <field name="name">certificados_detalle_proyectos.form</field>
+                <field name="model">certificados.detalle_proyectos</field>
+                <field name="arch" type="xml">
+                    <form string="Avance_detalle Form">
+                        <sheet>
+                            <group>
+
+                                <field name="proyecto_id"/>
+                                <!--<field name="quantity"/>-->
+                                <!--<field name="quincena_id"  />-->
+                                <!--<field name="lugar_id"  />-->
+                            </group>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+              <record id="certificados_detalle_proyectos_tree_view" model="ir.ui.view">
+                    <field name="name">contrato_detalle_proyectos.tree</field>
+                    <field name="model">certificados.detalle_proyectos</field>
+                    <field name="arch" type="xml">
+                        <tree editable="bottom">
+
+
+
+                            <field name="proyecto_id"/>
+                            <!--<field name="quantity"/>-->
+                            <!--<field name="quincena_id"/>-->
+                            <!--<field name="lugar_id"/>-->
+                            <!--<field name="fecha_fin"/>-->
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+    </data>
+</odoo>

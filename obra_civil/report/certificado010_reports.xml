@@ -1,0 +1,138 @@
+<odoo>
+
+
+    <template id="batata">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="p">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                      <link rel="stylesheet" href="/inventario_cah/static/src/css/Certificacion3.css"/>
+                        <div class="contenedor">
+                          <!--<span  t-esc="p.hola()"/>-->
+
+
+
+
+
+                          <!--<p t-foreach="p.hola2()" t-as="i">-->
+                              <!--<t t-set="existing_variable" t-value="True"/>-->
+                              <!--<t t-set="new_variable" t-value="True"/>-->
+                              <!-- existing_variable and new_variable now True -->
+                              <!--<span  t-esc="i[0]"/>-->
+                          <!--</p>-->
+                          <!--<span  t-esc="p.hola3()"/>-->
+
+
+                         <!--Declaracion de variables-->
+                         <t t-set="i" t-value="1"/>
+                         <!--<t t-set="numero_factura"/>-->
+                         <!--<t t-set="fecha_factura"/>-->
+                        <table class=" table table-bordered"><!--<tr t-foreach="o.move_lines" t-as="l">--> <!--<td class="item"> <span t-esc="i"/> </td>--> <!--<td class="descripcion"> <span t-field="l.product_id.name"/> </td>--> <!--<t t-set="i" t-value="i+1"/>--> <!--</tr>-->
+                        <thead>
+                        <tr>
+                        <td style="text-align: left;" colspan="11">LPN N" 73/2017 REPARACION Y MANTENIMIENTO EN HOSPITAL REGIONAL DE ENCARNACIÓN Y UNIDAD SANITARIA DE HOHENAU - CONTRATO No. 325/2017</td>
+                        </tr>
+                        <tr>
+                        <td colspan="11"></td>
+                        </tr>
+                        <tr>
+                        <td colspan="04">CERTIFICADO DE OBRAS N° 02</td>
+                        <td colspan="04">FECHA DE INICIO: 15/12/17</td>
+                        <td colspan="03">FECHA DE FIN: 15/01/18</td>
+                        </tr>
+                        <tr>
+                        <td colspan="11"></td>
+                        </tr>
+                        <tr>
+                        <td colspan="02">CONTRATANTE</td>
+                        <td colspan="09">INSTITUTO DE PREVISION SOCIAL</td>
+                        </tr>
+                        <tr>
+                        <td colspan="11"></td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: center;" colspan="11">LOTE NRO: 1</td>
+                        </tr>
+                        <tr>
+                        <td colspan="05">HR ENCARNACION Contrato Abierto</td>
+                        <td colspan="02">Certificados Anteriores</td>
+                        <td colspan="02">Certificado N°;</td>
+                        <td colspan="02">Acumulado Total</td>
+                        </tr>
+                        <tr>
+                        <td colspan="01">Item</td>
+                        <td colspan="01">Codigo<br />Catalogo</td>
+                        <td colspan="01">Descripcion del Bien</td>
+                        <td colspan="01">Unidad de Medida</td>
+                        <td colspan="01">Precio Unitario (IVA Incluido)</td>
+                        <td colspan="01">Cantidades</td>
+                        <td colspan="01">Total</td>
+                        <td colspan="01">Cantidades</td>
+                        <td colspan="01">Total</td>
+                        <td colspan="01">Cantidades</td>
+                        <td colspan="01">Total</td>
+                        </tr>
+
+                        <p t-foreach="p.hola()" t-as="i">
+                        <tr>
+                        <td colspan="01"></td>
+                        <td colspan="01"></td>
+                        <td colspan="01"><span  t-esc="i[0]"/></td>
+                        <td colspan="01"><span  t-esc="i[1]"/></td>
+                        <td colspan="01"><span  t-esc="i[2]"/></td>
+                        <td colspan="01"><span  t-esc="i[3]"/></td>
+                        <td colspan="01"><span  t-esc="i[4]"/></td>
+                        <td colspan="01"></td>
+                        <td colspan="01"></td>
+                        <td colspan="01"></td>
+                        <td colspan="01"></td>
+                        </tr>
+                        </p>
+                        <tr>
+                        <td colspan="02"></td>
+                        <td colspan="04">MONTO TOTAL CERTIFICADO</td>
+                        <td colspan="03">1.111.331.124</td>
+                        <td colspan="02"></td>
+                        </tr>
+                        <tr>
+                        <td colspan="11"></td>
+                        </tr>
+                        <tr>
+                        <td colspan="11">Son Guaranies: Un millon</td>
+                        </tr>
+                        <tr>
+                        <td colspan="11"></td>
+                        </tr>
+                        <tr>
+                        <td colspan="02"></td>
+                        <td colspan="04">SALDO TOTAL DEL CONTRATO</td>
+                        <td colspan="03">0
+                        </td>
+                        <td colspan="02"></td>
+                        </tr>
+                        <tr>
+                        <td colspan="11"></td>
+                        </tr>
+                        <tr>
+                        <td style="text-align: center;" colspan="4">______________</td>
+                        <td style="text-align: center;" colspan="4">______________</td>
+                        <td style="text-align: center;" colspan="3">______________</td>
+                        </tr>
+
+                        <tr>
+                        <td style="text-align: center;" colspan="4">FISCAL DE OBRAS</td>
+                        <td style="text-align: center;" colspan="4">JEFE DPTO</td>
+                        <td style="text-align: center;" colspan="3">GCA S.A.</td>
+                        </tr>
+                        </thead>
+                        </table>
+                        <p></p>
+
+                     </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+  <data>
+                <!--Herencia vista formulario para el pedido-->
+    <record id="vista_form_producto_servicio_obra_inh" model="ir.ui.view">
+        <field name="name">vista_form_producto_servicio_obra_inh</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <!-- find field description and add the field
+                 idea_ids after it -->
+            <field name="sale_ok" position="before">
+                <div>
+                    <field name="serviciodeobra"/>
+                    <label for="serviciodeobra"/>
+                </div>
+            </field>
+        </field>
+    </record>
+
+  </data>
+</odoo>

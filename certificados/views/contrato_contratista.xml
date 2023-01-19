@@ -1,0 +1,84 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="form_view_contrato_contratista">
+            <field name="name">contrato_contratista.form</field>
+            <field name="model">certificados.contrato_contratista</field>
+            <field name="arch" type="xml">
+                <form string="contrato_contratista_Form">
+                    <!--<header>-->
+                        <!--<field name="state" widget="statusbar"/>-->
+                        <!--<button string="Aprobar" type="object" class="btn btn-success" name=""/>-->
+                         <!--&lt;!&ndash;-->
+                        <!--<button string="Aprobar" states="borrador" type="object" class="btn btn-success" name=""/>-->
+                        <!--&ndash;&gt;-->
+                        <!--<button string="desaprobar" type="object" class="oe_highlight" name=""/>-->
+                    <!--</header>-->
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="fecha"/>
+                            <field name="contratista_id"/>
+                            <!--<field name="descripcion"/>-->
+                        </group>
+                        <notebook colspan="4">
+                            <page string="Servicios">
+                                <!--<field name="contrato_contratista_detalle_ids" context="{'default_contrato_id':context.get('active_id',False)}"/>-->
+                                <!--<field name="contrato_contratista_detalle_ids"/>-->
+
+                            </page>
+                            <!--<page string="Proyectos">-->
+                                <!--<field name="project_ids" />-->
+                            <!--</page>-->
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="contrato_contratista_tree_view" model="ir.ui.view">
+            <field name="name">contrato_contratista.tree</field>
+            <field name="model">certificados.contrato_contratista</field>
+            <field name="arch" type="xml">
+                <tree string="Contratos con contratista">
+                    <field name="name"/>
+                    <field name="fecha"/>
+                    <field name="contratista_id"/>
+                    <!-- <field name="descripcion"/> -->
+                </tree>
+            </field>
+        </record>
+
+
+
+
+ <!--  Actiones ####################  -->
+        <record model="ir.actions.act_window" id="contrato_contratista_list_action">
+            <field name="name">contrato</field>
+                <field name="res_model">certificados.contrato_contratista</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+                <field name="context">{}</field>
+                <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Contrato con el contratista</p>
+            </field>
+        </record>
+ <!--  Menu  -->
+<!--<menuitem id="main_contrato_contratista_menu" name="Contrato Contratista"/>-->
+ <!--
+ A first level in the left side menu is needed
+         before using action= attribute
+-->
+<!--<menuitem id="contrato_contratista_menu" name="Contrato con Contratista" parent="main_contrato_contratista_menu"/>-->
+ <!--
+ the following menuitem should appear *after*
+         its parent openacademy_menu and *after* its
+         action course_list_action
+-->
+<!--<menuitem id="contrato_contratista2_menu" name="Contrato" parent="contrato_contratista_menu" action="contrato_contratista_list_action"/>-->
+ <!--
+<menuitem id="contrato_menu2" name="Contrato2" parent="obracivil_menu"
+-->
+ <!-- action="contrato_list_action"/> -->
+</data>
+</odoo>

@@ -1,0 +1,175 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="contrato_form_view2">
+        <field name="name">contrato.form2</field>
+        <field name="model">obra_civil_2.contrato</field>
+        <field name="arch" type="xml">
+            <form string="Contrato Form2">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="fecha"/>
+                        <field name="contratista"/>
+                    </group>
+                    <!--<group string="Detalle">-->
+                        <!--<field name="contratodetalle_ids"/>-->
+                    <!--</group>-->
+
+                    <notebook colspan="4">
+                        <page string="Contrato">
+                            <field name="contratodetalle_ids"/>
+                        </page>
+                    <!--</notebook>-->
+                    <!--<notebook colspan="8">-->
+                        <page string="Resumen">
+                            <!--<field name="contratodetalle_ids"/>-->
+                            <field name="resumendetalle_ids"/>
+                        </page>
+                    <!--</notebook>-->
+                    <!--<notebook colspan="12">-->
+                        <page string="Quincena">
+                            <!--<field name="contratodetalle_ids"/>-->
+                            <notebook colspan="4">
+                                <page string="Resumenen de la quincena">
+                                </page>
+                                <page string="Pisos">
+                                </page>
+                            </notebook>
+                        </page>
+                    <!--</notebook>-->
+                    <!--<notebook colspan="16">-->
+                        <!--<page string="Lugares">-->
+                            <!--&lt;!&ndash;<field name="contratodetalle_ids"/>&ndash;&gt;-->
+                        <!--</page>-->
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="contratodetalle_form_view2">
+        <field name="name">contrato.form2detalle</field>
+        <field name="model">obra_civil_2.contratodetalle</field>
+        <field name="arch" type="xml">
+            <form string="Contrato Form2">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="unidad_de_medida"/>
+                        <field name="precio"/>
+                        <field name="quantity"/>
+                        <field name="subtotal"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+      <record model="ir.ui.view" id="aancedetalle_form_view2">
+        <field name="name">contrato.form23detalle</field>
+        <field name="model">obra_civil_2.resumendetalle</field>
+        <field name="arch" type="xml">
+            <form string="Contrato Form2">
+                <sheet>
+                    <group>
+                        <field name="product_id"/>
+                        <field name="quantity"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+
+
+    <record id="contrato_tree_view_2" model="ir.ui.view">
+            <field name="name">contrato.tree</field>
+            <field name="model">obra_civil_2.contrato</field>
+            <field name="arch" type="xml">
+                <tree string="contratos">
+                    <field name="name"/>
+                    <field name="fecha"/>
+                    <field name="contratista"/>
+                </tree>
+            </field>
+    </record>
+
+
+      <record id="contrato_tree_view_23" model="ir.ui.view">
+            <field name="name">contrato3.tree</field>
+            <field name="model">obra_civil_2.resumendetalle</field>
+            <field name="arch" type="xml">
+                <tree string="resumen">
+                    <field name="product_id"/>
+                    <field name="quantity"/>
+                    <field name="quantity_anterior"/>
+                    <field name="quantity_actual"/>
+
+                </tree>
+            </field>
+    </record>
+
+
+
+      <record id="contratodetalle_tree_view_2" model="ir.ui.view">
+            <field name="name">contratodetalle.tree</field>
+            <field name="model">obra_civil_2.contratodetalle</field>
+            <field name="arch" type="xml">
+                <tree string="contratos detalle">
+                    <field name="product_id"/>
+                    <field name="unidad_de_medida"/>
+                    <field name="precio"/>
+                    <field name="quantity"/>
+                    <field name="subtotal"/>
+                </tree>
+            </field>
+    </record>
+
+    <!-- window action -->
+    <!--
+        The following tag is an action definition for a "window action",
+        that is an action opening a view or a set of views
+    -->
+    <record model="ir.actions.act_window" id="contrato_list_action2">
+        <field name="name">contrato</field>
+        <field name="res_model">obra_civil_2.contrato</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Contrato de Obra Civil</p>
+        </field>
+    </record>
+
+
+    <!--<record model="ir.actions.act_window" id="contrato_list_action23">-->
+        <!--<field name="name">detalle</field>-->
+        <!--<field name="res_model">obra_civil_2.contratodetalle</field>-->
+        <!--<field name="view_type">form</field>-->
+        <!--<field name="view_mode">form</field>-->
+        <!--<field name="context">{}</field>-->
+        <!--<field name="help" type="html">-->
+            <!--<p class="oe_view_nocontent_create">Contrato detalle de Obra Civil</p>-->
+        <!--</field>-->
+    <!--</record>-->
+
+    <!-- top level menu: no parent -->
+    <menuitem id="main_obracivil_menu" name="Obra Civil"/>
+    <!-- A first level in the left side menu is needed
+         before using action= attribute -->
+    <menuitem id="obracivil_menu" name="Obra Civil"
+              parent="main_obracivil_menu"/>
+    <!-- the following menuitem should appear *after*
+         its parent openacademy_menu and *after* its
+         action course_list_action -->
+    <menuitem id="contrato_menu" name="Contrato" parent="obracivil_menu"
+              action="contrato_list_action2"/>
+
+
+  </data>
+</odoo>

@@ -1,0 +1,90 @@
+<odoo>
+    <data>
+        <record id="proyecto_herencia_" model="ir.ui.view">
+            <field name="name">proyecto_herencia</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+
+
+                <!--<xpath expr="/form/sheet/div[2]/div/[@name='options_active']" position="after">-->
+                    <!---->
+                <!--</xpath>-->
+
+
+                <xpath expr="/form/sheet/div[2]/div[@name='options_active']" position="replace">
+                    <div>
+                        <group>
+                    <!--<label for="contratista_id" class="oe_edit_only"/>-->
+                            <field name="contratista_id"/>
+                            <field name="fecha_de_inicio"/>
+                            <field name="fecha_de_fin"/>
+                            <field name="monto_no_exceder"/>
+
+
+
+                            <!--<label string="Label 1" colors="red" attrs="{'invisible':monto_no < monto hecho}"/> -->
+                            <!--<label string="Label 2" attrs="{'invisible':[]}"/>-->
+                            <!--<field name="monto_total_hecho" string="LABEL1" color="red" attrs="{'invisible': [('monto_no_exceder', '<', monto_total_hecho)]}"/>-->
+                            <!--<field name="monto_total_hecho" string="LABEL2" color="yellow" attrs="{'invisible': [('monto_no_exceder', '=', monto_total_hecho)]}"/>-->
+                            <!--<field name="monto_total_hecho" string="LABEL3" color="green" attrs="{'invisible': [('monto_no_exceder', '>', monto_total_hecho)]}"/>-->
+                            <!--<field name="monto_total_hecho" string="LABEL2" attrs="{'invisible': [('partner_id', '=', False)]}"/>-->
+                            <field name="monto_total_hecho" />
+                            <!--colors="blue:state=='approved' or doc_type=='revisi' "-->
+                        </group>
+                    </div>
+
+                </xpath>
+
+
+
+                <xpath expr="/form/sheet/notebook/page/group/field[@name='partner_id']" position="replace">
+                    <field name="partner_id" invisible="1"/>
+                    <!--<field name="contratista_id"/>-->
+                </xpath>
+
+                <!--<field name="name" position="after">-->
+                    <!--<group>-->
+                    <!--<field name="contrato_contratista_id" />-->
+                    <!--</group>-->
+                <!--</field>-->
+
+                <xpath expr="/form/sheet/notebook/page[@name='settings']" position="before">
+                    <!--<page name="detalledelproyecto" string="Detalles del proyecto">-->
+
+                        <!--<label for="contratista_id" class="oe_edit_only"/>-->
+                        <!--<field name="contratista_id"/>-->
+
+                        <!--<field name="partner_id"/>-->
+                        <!--<field name="partner_id"/>-->
+
+                    <!--</page>-->
+
+                    <page name="servicios" string="Servicios">
+
+                        <field name="proyecto_detalle_servicio_ids"/>
+
+
+                    </page>
+
+                    <page name="lugar" string="Lugar">
+                        <field name="lugar_ids"/>
+                    </page>
+
+                    <!--<page name="quincena" string="Quincena">-->
+                        <!--<field name="quincena_ids"/>-->
+                    <!--</page>-->
+
+                    <page name="Avances" string="Avances">
+                        <field name="avance_ids" context="{'default_project_id':active_id}"/>
+                        <!--<field name="avance_ids"/>-->
+                    </page>
+
+                </xpath>
+
+
+
+            </field>
+        </record>
+    </data>
+</odoo>

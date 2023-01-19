@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+<!-- hereda de este papu project.view_task_form2 -->
+
+   <record id="tarea_2" model="ir.ui.view">
+      <field name="name">tarea</field>
+      <field name="model">project.task</field>
+      <field name="type">form</field>
+      <field name="inherit_id" ref="project.view_task_form2"/>
+      <field name="arch" type="xml">
+          <xpath expr="//form/sheet/notebook" position="inside">
+             <page string="Ejecucion" >
+             <group >
+
+                  <field name="tarearealizada_ids"/>
+
+              </group>
+             </page>
+          </xpath>
+      </field>
+  </record>
+
+<!-- vista de servicios -->
+
+
+    <record id="servicio_tree_view" model="ir.ui.view">
+            <field name="name">servicio.tree</field>
+            <field name="model">obra_civil.ejecucion</field>
+            <field name="arch" type="xml">
+                <tree string="servicio" editable="top">
+                    <field name="product_id"/>
+                    <field name="quantity"/>
+                   <field name="fecha"/>
+
+                </tree>
+            </field>
+    </record>
+
+
+
+</odoo>

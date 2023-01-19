@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="contrato_cliente_detalle_form_view">
+                <field name="name">contrato_cliente_detalle.form</field>
+                <field name="model">certificados.contrato_cliente_detalle</field>
+                <field name="arch" type="xml">
+                    <form string="Detalle Contrato Form">
+                        <sheet>
+                            <group>
+                                <field name="product_id" domain="[('serviciodeobra', '=', True)]" />
+                              <!--<field name="product_id" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}" domain="[('serviciodeobra', '=', True)]" />-->
+                              <!--<field name="unidad_de_medida" readonly="1" force_save="1" />-->
+                                <field name="unidad_de_medida" />
+                              <field name="price_unit"/>
+                              <field name="quantity"/>
+                              <field name="subtotal" readonly="1" force_save="1"/>
+                              <field name="cantidades_hechas" readonly="1" force_save="1"/>
+                              <field name="subtotales_hechas" readonly="1" force_save="1"/>
+
+
+                            </group>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+              <record id="contrato_cliente_detalle_tree_view" model="ir.ui.view">
+                    <field name="name">contrato_cliente_detalle.tree</field>
+                    <field name="model">certificados.contrato_cliente_detalle</field>
+                    <field name="arch" type="xml">
+                        <tree string="Contratos detalle con clientes">
+                            <field name="product_id"/>
+                            <!--<field name="fecha_fin"/>-->
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+
+  </data>
+</odoo>

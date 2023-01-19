@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="certificados.list">
+      <field name="name">certificados list</field>
+      <field name="model">certificados.certificados</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="certificados.action_window">
+      <field name="name">certificados window</field>
+      <field name="res_model">certificados.certificados</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="certificados.action_server">
+      <field name="name">certificados server</field>
+      <field name="model_id" ref="model_certificados_certificados"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="certificados" id="certificados.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="certificados.menu_1" parent="certificados.menu_root"/>
+    <menuitem name="Menu 2" id="certificados.menu_2" parent="certificados.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="certificados.menu_1_list" parent="certificados.menu_1"
+              action="certificados.action_window"/>
+    <menuitem name="Server to list" id="certificados" parent="certificados.menu_2"
+              action="certificados.action_server"/>
+    -->
+  </data>
+</odoo>

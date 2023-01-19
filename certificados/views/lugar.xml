@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="certificados_lugar_form_view">
+                <field name="name">certificados_lugar.form</field>
+                <field name="model">certificados.lugar</field>
+                <field name="arch" type="xml">
+                    <form string="Lugar Form">
+                        <sheet>
+                            <group>
+                                <field name="name"/>
+                                <field name="descripcion"/>
+                            </group>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+              <record id="certificados_lugar_tree_view" model="ir.ui.view">
+                    <field name="name">contrato_lugar.tree</field>
+                    <field name="model">certificados.lugar</field>
+                    <field name="arch" type="xml">
+                        <tree string="Lugar">
+                            <field name="name"/>
+                            <field name="descripcion"/>
+                            <!--<field name="fecha_fin"/>-->
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+
+  </data>
+</odoo>

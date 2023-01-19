@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="certificados_avance_form_view">
+                <field name="name">certificados_avance.form</field>
+                <field name="model">certificados.avance</field>
+                <field name="arch" type="xml">
+                    <form string="Avance Form">
+                        <header>
+
+                            <button string="Aprobar" type="object" class="btn btn-success" name="validar" attrs="{'invisible': [('state','=','aprobado')]}" />
+                            <button string="desaprobar" type="object" class="oe_highlight" name="desvalidar" attrs="{'invisible': [('state','=','borrador')]}" />
+                            <field name="state" widget="statusbar" />
+                        </header>
+
+                        <sheet>
+
+
+                            <group>
+
+                                <!--<field name="project_id" invisible="1"/>-->
+                                <field name="fecha_de_mediciones"/>
+                                <field name="project_id" invisible="1"/>
+                                <!--<field name="quincena_id" />-->
+                                <!--<field name="lugar_ids" invisible="1"/>-->
+                                <!--<field name="lugar_id"  />-->
+                                <!--<field name="lugar_id"  domain="[('id', 'in', project_id.lugar_ids)]" />-->
+                                <field name="lugar_id" domain="[('project_id', '=', project_id)]"/>
+                                <!-- <field name="state"/>  -->
+                            </group>
+
+                            <notebook colspan="4">
+                                <page string="Detalle">
+                                    <field name="avance_detalle_ids" context="{'default_project_id':project_id}"/>
+                                </page>
+                            </notebook>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+              <record id="certificados_avance_tree_view" model="ir.ui.view">
+                    <field name="name">contrato_avance.tree</field>
+                    <field name="model">certificados.avance</field>
+                    <field name="arch" type="xml">
+                        <tree string="Avance">
+                            <field name="project_id" string="Proyecto"/>
+                            <field name="fecha_de_mediciones"/>
+                            <!--<field name="quincena_id"/>-->
+                            <field name="lugar_id"/>
+                            <field name="state"/>
+
+
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+    </data>
+</odoo>

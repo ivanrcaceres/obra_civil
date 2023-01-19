@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="proyecto_detalle_servicio_form_view">
+                <field name="name">proyecto_detalle_servicio.form</field>
+                <field name="model">certificados.proyecto_detalle_servicio</field>
+                <field name="arch" type="xml">
+                    <form string="Proyecto Detalle Servicio Form">
+                        <sheet>
+                            <group>
+                                <field name="product_id" domain="[('serviciodeobra', '=', True)]" />
+                              <!--<field name="product_id" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}" domain="[('serviciodeobra', '=', True)]" />-->
+                              <!--<field name="unidad_de_medida" readonly="1" force_save="1" />-->
+                              <field name="unidad_de_medida" />
+                              <field name="price_unit"/>
+                              <field name="quantity"/>
+                              <!--<field name="subtotal" readonly="1" force_save="1"/>-->
+                              <!--<field name="cantidades_hechas" readonly="1" force_save="1"/>-->
+                              <!--<field name="subtotales_hechas" readonly="1" force_save="1"/>-->
+
+
+                            </group>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+              <record id="proyecto_detalle_servicio_tree_view" model="ir.ui.view">
+                    <field name="name">proyecto_detalle_servicio.tree</field>
+                    <field name="model">certificados.proyecto_detalle_servicio</field>
+                    <field name="arch" type="xml">
+                        <tree editable="bottom">
+
+                            <field name="product_id"/>
+                            <field name="unidad_de_medida" />
+                            <field name="price_unit"/>
+                            <field name="quantity"/>
+                            <field name="quantity_hechas"/>
+                            <field name="montohechos"/>
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <record id="reporte_certificado01_wizard_view" model="ir.ui.view">
+            <field name="name">certificados.wizard_reporte_certificado_proyecto</field>
+            <field name="model">certificados.wizard_reporte_certificado_proyecto</field>
+            <field name="arch" type="xml">
+               <form>
+                  <group>
+                      <!--<field name="desde" required="True"/>-->
+                      <!--<field name="hasta" required="True"/>-->
+                      <!--<field name="cliente_id" required="True"/>-->
+                      <field name="proyecto_id" invisible="1" required="True" options="{'no_create': True,'no_create_edit': True}"/>
+                      <field name="avance_ids"  options="{'no_create': True,'no_create_edit': True}" required="True" domain="[('project_id', '=', proyecto_id)]"/>
+
+                  </group>
+
+                   <footer>
+                       <!--<button name="check_report" type="object" string="Generar PDF" class="oe_highlight"/>-->
+                       <!--<button name="http://localhost:8069/certificados/certificados" type="object" string="Generar excel" class="oe_highlight"/>-->
+                       <button name="excel" type="object" string="Generar Xlsx" class="oe_highlight"/>
+                       <button string="Cancelar" special="cancel"/>
+                   </footer>
+               </form>
+            </field>
+        </record>
+
+        <!--<record id="action_reporte_certificados_wizard" model="ir.actions.act_window">-->
+            <!--<field name="name">Reporte de Certificado</field>-->
+            <!--<field name="res_model">certificados.wizard_reporte_certificado_proyecto</field>-->
+            <!--<field name="type">ir.actions.act_window</field>-->
+            <!--<field name="view_type">form</field>-->
+            <!--<field name="view_mode">form</field>-->
+            <!--<field name="view_id" ref="reporte_certificado01_wizard_view"/>-->
+            <!--<field name="target">new</field>-->
+        <!--</record>-->
+
+        <act_window id="window_reporte_certificados_wizard"
+            name="Certificados de avances"
+            src_model="project.project"
+            res_model="certificados.wizard_reporte_certificado_proyecto"
+            view_mode="form"
+            target="new"
+            key2="client_action_multi"/>
+
+
+        <!--<menuitem id="cajas_reports" name="Reporte Cajas " action="action_reporte_cajas_wizard" parent="account.menu_finance_reports" sequence="12"/>-->
+
+        <!--<menuitem id="certificados_report" name="Informe de Certificado" action="action_reporte_certificados_wizard" parent="certificados.certificados" sequence="10"/>-->
+
+    </data>
+</odoo>

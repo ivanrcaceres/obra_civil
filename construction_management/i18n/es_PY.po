@@ -1,0 +1,1071 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* construction_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-17 20:33+0000\n"
+"PO-Revision-Date: 2018-09-17 20:33+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_analylic_acc_id
+msgid "Analylic Account"
+msgstr "Cuenta Analítica"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Analytic Account"
+msgstr "Cuenta Analítica"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_assest_id
+msgid "Assets"
+msgstr "Bienes"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.project_task_inherit_bi_form_view
+msgid "Assign To"
+msgstr "Asignar a"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Assigned Date"
+msgstr "Fecha asignada"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Assigned To"
+msgstr "Asignado a"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_product_boq_type
+msgid "BOQ Type"
+msgstr "Tipo BOQ"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Back Order Of"
+msgstr "Pedido de espera"
+
+#. module: construction_management
+#: model:ir.actions.act_window,name:construction_management.act_open_bill_quantity_view
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_bill_of_qty_id
+#: model:ir.ui.menu,name:construction_management.menu_bill_quantity
+#: model:ir.ui.view,arch_db:construction_management.view_bill_quantity_form
+#: model:ir.ui.view,arch_db:construction_management.view_bill_quantity_search
+#: model:ir.ui.view,arch_db:construction_management.view_bill_quantity_tree
+msgid "Bill Of Quantity"
+msgstr "Cantidad de cuenta"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_bill_quantity_line
+msgid "Bill Of Quantity Line"
+msgstr "linea de cantidad de cuenta"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_quantity_line
+msgid "Bill Of Quantity Lines"
+msgstr "Lineas de cantidades de cuentas"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_bill_quantity_id
+msgid "Bill of Quantity Reference"
+msgstr "Referencia de la lista de valores"
+
+#. module: construction_management
+#: model:ir.ui.menu,name:construction_management.menu_budgets
+msgid "Budgets"
+msgstr "Presupuestos"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_create_purchase_order_wizard_form
+#: model:ir.ui.view,arch_db:construction_management.view_create_subtask_wizard_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: construction_management
+#: selection:material.line,status:0
+msgid "Close"
+msgstr "Cerrado"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_note_note_construction_proj_id
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_construnction_pro_id
+msgid "Construction Project"
+msgstr "Proyecto contruccion"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_task_consume_material_ids
+msgid "Consume Material"
+msgstr "Consumir Material"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Consumed Material"
+msgstr "Material Consumido"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: construction_management
+#: model:ir.ui.menu,name:construction_management.menu_contractors
+msgid "Contractors"
+msgstr "Contractistas"
+
+#. module: construction_management
+#: model:ir.actions.act_window,name:construction_management.act_open_cost_code_view
+#: model:ir.model,name:construction_management.model_cost_code
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_cost_code_id
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_cost_code_ids
+#: model:ir.ui.menu,name:construction_management.menu_cost_code
+#: model:ir.ui.view,arch_db:construction_management.view_cost_code_form
+#: model:ir.ui.view,arch_db:construction_management.view_cost_code_search
+#: model:ir.ui.view,arch_db:construction_management.view_cost_code_tree
+#: model:ir.ui.view,arch_db:construction_management.view_cost_header_form
+msgid "Cost Code"
+msgstr "Codigo de costo"
+
+#. module: construction_management
+#: model:ir.actions.act_window,name:construction_management.act_open_cost_header_view
+#: model:ir.model,name:construction_management.model_cost_header
+#: model:ir.model.fields,field_description:construction_management.field_work_package_cost_header_ids
+#: model:ir.ui.menu,name:construction_management.menu_cost_header
+#: model:ir.ui.view,arch_db:construction_management.view_cost_header_form
+#: model:ir.ui.view,arch_db:construction_management.view_cost_header_search
+#: model:ir.ui.view,arch_db:construction_management.view_cost_header_tree
+msgid "Cost Header"
+msgstr "Encabezado de costo"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_name
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_name
+msgid "Cost Header Name"
+msgstr "Nombre de encabezado de costo"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_number
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_number
+msgid "Cost Header Number"
+msgstr "Numero de encabezado de costo"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_work_package_form
+msgid "Cost Headers"
+msgstr "Encabezados de costo"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_cost_of_header
+msgid "Cost Of Header"
+msgstr "Costo de encabezado"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_create_purchase_order_wizard_form
+#: model:ir.ui.view,arch_db:construction_management.view_create_subtask_wizard_form
+msgid "Create"
+msgstr "Crear"
+
+#. module: construction_management
+#: model:ir.actions.act_window,name:construction_management.action_create_purchase_order
+#: model:ir.ui.view,arch_db:construction_management.inherit_material_request_form
+msgid "Create Purchase Order"
+msgstr "Crear orden de compra"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.project_task_inherit_bi_form_view
+msgid "Create SubTask"
+msgstr "Crear SubTarea"
+
+#. module: construction_management
+#: model:ir.actions.act_window,name:construction_management.action_create_subtask_wizard
+msgid "Create Subtask"
+msgstr "Crear Subtarea"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_material_details_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_material_line_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_work_package_create_uid
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_create_date
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_create_date
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_create_date
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_create_date
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_create_date
+#: model:ir.model.fields,field_description:construction_management.field_material_details_create_date
+#: model:ir.model.fields,field_description:construction_management.field_material_line_create_date
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_create_date
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_create_date
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_create_date
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_create_date
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_create_date
+#: model:ir.model.fields,field_description:construction_management.field_work_package_create_date
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+msgid "Custom"
+msgstr "Personalizado"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Date"
+msgstr "Fecha"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Deadline"
+msgstr "Fecha límite"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_project_project_deliverables_ids
+msgid "Deliverable"
+msgstr "Entregable"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_description
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_description
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_name
+#: model:ir.model.fields,field_description:construction_management.field_material_details_name
+#: model:ir.model.fields,field_description:construction_management.field_project_task_des
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Description"
+msgstr "Descripción"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Destination Location Zone"
+msgstr "Zona de ubicación de destino"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_display_name
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_display_name
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_display_name
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_display_name
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_display_name
+#: model:ir.model.fields,field_description:construction_management.field_material_details_display_name
+#: model:ir.model.fields,field_description:construction_management.field_material_line_display_name
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_display_name
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_display_name
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_display_name
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_display_name
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_display_name
+#: model:ir.model.fields,field_description:construction_management.field_work_package_display_name
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Duration"
+msgstr "Duración"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: construction_management
+#: selection:bill.quantity.line,key:0
+msgid "Equipment"
+msgstr "Equipamiento"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_equipment_cost
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_cost_equipment
+msgid "Equipment Cost"
+msgstr "Costo de Equipamiento"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+msgid "Expected Date"
+msgstr "Fecha prevista"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_id
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_id
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_id
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_id
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_id
+#: model:ir.model.fields,field_description:construction_management.field_material_details_id
+#: model:ir.model.fields,field_description:construction_management.field_material_line_id
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_id
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_id
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_id
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_id
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_id
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_id
+#: model:ir.model.fields,field_description:construction_management.field_work_package_id
+msgid "ID"
+msgstr "ID"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Initially Planned Hours"
+msgstr "Horas planificadas inicialmente"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Inventory Usage"
+msgstr "Uso del inventario"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+msgid "Inventory Usage By Bill Of Quantity"
+msgstr "Uso de inventario por factura de cantidad"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_project_inventory_usages_ids
+msgid "Inventory Usage Reference"
+msgstr "Referencia de uso de inventario"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Invoice Status"
+msgstr "Estado de la factura"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_key
+msgid "Key"
+msgstr "Clave"
+
+#. module: construction_management
+#: selection:bill.quantity.line,key:0
+msgid "Labor"
+msgstr "Labor"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_labor_cost
+msgid "Labor Cost"
+msgstr "Costo de Labor"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity___last_update
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line___last_update
+#: model:ir.model.fields,field_description:construction_management.field_cost_code___last_update
+#: model:ir.model.fields,field_description:construction_management.field_cost_header___last_update
+#: model:ir.model.fields,field_description:construction_management.field_material_consume___last_update
+#: model:ir.model.fields,field_description:construction_management.field_material_details___last_update
+#: model:ir.model.fields,field_description:construction_management.field_material_line___last_update
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension___last_update
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order___last_update
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables___last_update
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard___last_update
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard___last_update
+#: model:ir.model.fields,field_description:construction_management.field_work_package___last_update
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_material_details_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_material_line_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_write_uid
+#: model:ir.model.fields,field_description:construction_management.field_work_package_write_uid
+msgid "Last Updated by"
+msgstr "Ultima actualización por"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_write_date
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_write_date
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_write_date
+#: model:ir.model.fields,field_description:construction_management.field_cost_header_write_date
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_write_date
+#: model:ir.model.fields,field_description:construction_management.field_material_details_write_date
+#: model:ir.model.fields,field_description:construction_management.field_material_line_write_date
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_write_date
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_write_date
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_write_date
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_write_date
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_write_date
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_write_date
+#: model:ir.model.fields,field_description:construction_management.field_work_package_write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: construction_management
+#: selection:product.product,boq_type:0
+msgid "Machinery / Equipment"
+msgstr "Maquinaria / Equipo"
+
+#. module: construction_management
+#: selection:bill.quantity.line,key:0
+#: model:ir.model.fields,field_description:construction_management.field_material_line_project_id
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Material"
+msgstr "Material"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_material_cost
+msgid "Material Cost"
+msgstr "Costo Material"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Material Plannings"
+msgstr "Material Planificados"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_task_material_req_stock_ids
+msgid "Material Req Stock"
+msgstr "Material Requerido Stock"
+
+#. module: construction_management
+#: model:ir.ui.menu,name:construction_management.menu_materialr_requisitions
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+msgid "Material Requisitions"
+msgstr "Requisiciones de material"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Material Requistions"
+msgstr "Requisiciones de material"
+
+#. module: construction_management
+#: model:ir.ui.menu,name:construction_management.menu_materials
+#: model:ir.ui.menu,name:construction_management.sub_materials
+#: model:ir.ui.view,arch_db:construction_management.view_bill_quantity_form
+msgid "Materials"
+msgstr "Materiales"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_bill_quantity_form
+msgid "New Revision"
+msgstr "Nueva Revision"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_note_note
+msgid "Note"
+msgstr "Nota"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_on_hand_qty
+msgid "On Hand Quantity"
+msgstr "Cantidad disponible"
+
+#. module: construction_management
+#: selection:material.line,status:0
+msgid "Open"
+msgstr "Abierto"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Order Date"
+msgstr "Fecha entrega"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Order Number"
+msgstr "Número de pedido"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_product_pur_order_wiz_id
+#: model:ir.model.fields,field_description:construction_management.field_product_template_pur_order_wiz_id
+msgid "Ordersss"
+msgstr "Ordersss"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_task_task_parent_id
+msgid "Parent Id"
+msgstr "Parent Id"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_partner_ids
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_partner_id
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Planned Hours"
+msgstr "Horas planeadas"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Planned Qty"
+msgstr "Cantidad Planeadas"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_material_line_planned_qty
+msgid "Planned Qty."
+msgstr "Cantidad Planeadas"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_price_subtotal
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_price_subtotal
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Price Subtotal"
+msgstr "Precio Subtotal"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_price_unit
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_price_unit
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Price Unit"
+msgstr "Precio unitario"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_task_prod_material_ids
+msgid "Prod Material"
+msgstr "Material Producido"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_product_product
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_product_id
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_product_id
+#: model:ir.model.fields,field_description:construction_management.field_material_details_product_id
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_product_id
+#: model:ir.model.fields,field_description:construction_management.field_product_product_tmpl_id
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_pro_pur_ids
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Product"
+msgstr "Producto"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_product_template
+msgid "Product Template"
+msgstr "Producto Plantilla"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_uom_id
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_uom_id
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Product UOM"
+msgstr "Producto UOM"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_material_line_product_id
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_pro_ids
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_product_ids
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+#: model:ir.ui.view,arch_db:construction_management.view_create_purchase_order_wizard_form
+msgid "Products"
+msgstr "Productos"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_project_project
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_project_id
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_project_id
+#: model:ir.model.fields,field_description:construction_management.field_project_deliverables_project_id
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_project_id
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_note_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_project_project_cost
+msgid "Project Cost"
+msgstr "Proyecto Costo"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Project Deliverables"
+msgstr "Proyectos Entregable"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Project Initiation()"
+msgstr "Proyecto Iniciacion()"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Project Manager"
+msgstr "Responsable de proyecto"
+
+#. module: construction_management
+#: model:ir.actions.report,name:construction_management.report_custom_project_note
+#: model:ir.ui.view,arch_db:construction_management.report_project_note_custom
+msgid "Project Note"
+msgstr "Nota del proyecto"
+
+#. module: construction_management
+#: model:ir.actions.report,name:construction_management.report_custom_project_job_order
+#: model:ir.model.fields,field_description:construction_management.field_note_note_task_id
+#: model:ir.model.fields,field_description:construction_management.field_product_product_project_task_id
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_project_task_stock_id
+msgid "Project Task"
+msgstr "Proyecto Tarea"
+
+#. module: construction_management
+#: model:ir.actions.report,name:construction_management.report_custom_project
+msgid "Projects"
+msgstr "Proyectos"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_purchase_order_wizard_pur_pro_id
+msgid "Pur Pro"
+msgstr "Pur Pro"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_create_purchase_order_wizard_form
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Purchase Order :"
+msgstr "Order de compra:"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_project_purchase_order_ids
+msgid "Purchase Order Reference"
+msgstr "Referencia de orden de compra"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_product_product_extension_qty
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_qty
+msgid "QTY"
+msgstr "QTY"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_qty
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_qty
+msgid "Qty"
+msgstr "Qty"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_product_qty
+#: model:ir.model.fields,field_description:construction_management.field_material_details_product_qty
+#: model:ir.model.fields,field_description:construction_management.field_product_product_quantity
+#: model:ir.model.fields,field_description:construction_management.field_product_purchase_order_quantity
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_bill_quantity_form
+msgid "Quantity Line"
+msgstr "Linea de cantidad"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_price_unit
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+msgid "References"
+msgstr "Referencias"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+msgid "Related Purchase Order"
+msgstr "Orden de compra relacionada"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+msgid "Related Sale Order"
+msgstr "Orden de venta relacionada"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Remaining Hours"
+msgstr "Horas Restantes"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_note_note_responsible_user
+msgid "Responsible Person"
+msgstr "Persona Responsable"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_note_custom
+msgid "Responsible User"
+msgstr "Usuario Responsable"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_revision
+msgid "Revision"
+msgstr "Revision"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Sale Order :"
+msgstr "Orden de venta :"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_project_sale_order_ids
+msgid "Sale Order Reference"
+msgstr "Referencia de orden de venta"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Scheduled Date"
+msgstr "Cita agendada"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Source Document"
+msgstr "Documento origen"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_material_line_status
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "State"
+msgstr "Estado"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Status"
+msgstr "Estado"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_stock_move
+#: model:ir.model.fields,field_description:construction_management.field_project_task_stock_move_ids
+#: model:ir.model.fields,field_description:construction_management.field_stock_move_project_stock_move_id
+msgid "Stock Move"
+msgstr "Stock Movimiento"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+msgid "Stock Moves"
+msgstr "Stock Movimiento"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_sub_contract_cost
+msgid "SubContract Cost"
+msgstr "Costo de SubContrato"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "SubTask"
+msgstr "SubTarea"
+
+#. module: construction_management
+#: selection:bill.quantity.line,key:0
+#: selection:product.product,boq_type:0
+msgid "Subcontract"
+msgstr "Subcontracto"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_subcontract_cost
+msgid "Subcontract Cost"
+msgstr "Costo Subcontracto"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_task_subtask_ids
+#: model:ir.ui.view,arch_db:construction_management.project_task_inherit_bi_form_view
+msgid "Subtask"
+msgstr "Subtarea"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_create_subtask_wizard_form
+msgid "Subtask Create"
+msgstr "Subtarea Crear"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_project_task
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_task_id
+#: model:ir.model.fields,field_description:construction_management.field_material_details_task_id
+#: model:ir.ui.view,arch_db:construction_management.report_project_note_custom
+msgid "Task"
+msgstr "Tarea"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_job_orders_id
+msgid "Task / Job Orders"
+msgstr "Tarea / Ordenes de trabajo"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_job_orders_user_id
+msgid "Task / Job Orders User"
+msgstr "Tarea / Usuario de órdenes de trabajo"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_subtask_wizard_subtask_lines
+msgid "Task Line"
+msgstr "Tarea Linea"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Task Name"
+msgstr "Nombre Tarea"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.project_task_inherit_bi_form_view
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Task Title"
+msgstr "Titulo Tarea"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Tasks :"
+msgstr "Tareas :"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Timesheet"
+msgstr "Parte de horas"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_price_subtotal
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Total"
+msgstr "Total"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_job_orders_material_form
+msgid "Unit Of Measure"
+msgstr "Unidad de medida"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "Unit Of Measurement"
+msgstr "Unidad de medida"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_cost_code_price_unit
+msgid "Unit Price"
+msgstr "Precio Unitario"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_uom_id
+#: model:ir.model.fields,field_description:construction_management.field_material_consume_uom_id
+#: model:ir.model.fields,field_description:construction_management.field_material_details_uom_id
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Untaxed"
+msgstr "Sin impuestos"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_material_line_used_qty
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Used Qty"
+msgstr "Used Qty"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_job_order_custom
+msgid "User"
+msgstr "Usuario"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: construction_management
+#: model:ir.ui.menu,name:construction_management.sub_vendors
+#: model:ir.ui.view,arch_db:construction_management.view_create_purchase_order_wizard_form
+msgid "Vendors"
+msgstr "Proveedores"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_task_wiz_id
+msgid "Wiz Parent Id"
+msgstr "Wiz Parent Id"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_work_cost_package
+#: selection:product.product,boq_type:0
+msgid "Work Cost Package"
+msgstr "Trabajo Costo Paquete"
+
+#. module: construction_management
+#: selection:bill.quantity.line,key:0
+#: model:ir.actions.act_window,name:construction_management.act_open_work_package_view
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_line_work_package_id
+#: model:ir.model.fields,field_description:construction_management.field_work_package_extension_work_package_id
+#: model:ir.ui.menu,name:construction_management.menu_work_package
+#: model:ir.ui.menu,name:construction_management.work_packages_main
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+#: model:ir.ui.view,arch_db:construction_management.report_project_project_custom
+#: model:ir.ui.view,arch_db:construction_management.view_work_package_form
+#: model:ir.ui.view,arch_db:construction_management.view_work_package_search
+#: model:ir.ui.view,arch_db:construction_management.view_work_package_tree
+msgid "Work Package"
+msgstr "Trabajo Paquete"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.inherit_bi_view_edit_project_form
+msgid "Work Package By Bill Of Quantity"
+msgstr "Trabajo Paquete por factura de Cantidad"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_bill_quantity_work_package_cost
+#: model:ir.model.fields,field_description:construction_management.field_work_package_work_package_cost
+msgid "Work Package Cost"
+msgstr "Trabajo Paquete Costo"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_work_package_name
+msgid "Work Package Name"
+msgstr "Trabajo Paquete Nombre"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_project_project_work_package_ids
+msgid "Work Package Reference"
+msgstr "Trabajo Paquete Referencia"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_work_package
+msgid "Work Packages"
+msgstr "Trabajo Paquetes"
+
+#. module: construction_management
+#: selection:product.product,boq_type:0
+msgid "Worker / Resource"
+msgstr "Trabajador / Recurso"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_stock_picking_worker_cost
+msgid "Worker / Resource Cost"
+msgstr "Trabajador / Recurso Costo"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_bill_quantity
+msgid "bill.quantity"
+msgstr "factura.cantidad"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_material_consume
+msgid "material.consume"
+msgstr "material.consumido"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_material_details
+msgid "material.details"
+msgstr "material.detalle"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_material_line
+msgid "material.line"
+msgstr "material.linea"
+
+#. module: construction_management
+#: model:ir.ui.view,arch_db:construction_management.view_create_purchase_order_wizard_form
+#: model:ir.ui.view,arch_db:construction_management.view_create_subtask_wizard_form
+msgid "or"
+msgstr "o"
+
+#. module: construction_management
+#: model:ir.model.fields,field_description:construction_management.field_res_partner_res_partner_id
+#: model:ir.model.fields,field_description:construction_management.field_res_users_res_partner_id
+msgid "partner"
+msgstr "contacto"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_product_product_extension
+msgid "product.product.extension"
+msgstr "producto.producto.extension"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_product_purchase_order
+msgid "product.purchase.order"
+msgstr "producto.compra.orden"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_project_deliverables
+msgid "project.deliverables"
+msgstr "proyectos.delivables"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_purchase_order_wizard
+msgid "purchase.order.wizard"
+msgstr "asistente.orden.compra"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_subtask_wizard
+msgid "subtask.wizard"
+msgstr "asistente.subtarea"
+
+#. module: construction_management
+#: model:ir.model,name:construction_management.model_work_package_extension
+msgid "work.package.extension"
+msgstr "Extension.paquete.trabajo"
+

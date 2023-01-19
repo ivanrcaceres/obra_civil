@@ -1,0 +1,119 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="form_view_contrato_cliente">
+            <field name="name">contrato_cliente.form</field>
+            <field name="model">certificados.contrato_cliente</field>
+            <field name="arch" type="xml">
+                <form string="contrato_cliente_Form">
+                    <header>
+                        <field name="state" widget="statusbar"/>
+                        <button string="Borrador" type="object" class="oe_highlight" name="borrador" attrs="{'invisible': [('state','=','borrador')]}"/>
+                        <button string="Iniciado" type="object" class="oe_highlight" name="iniciado" attrs="{'invisible': [('state','=','iniciado')]}"/>
+                        <button string="Finalizado" type="object" class="oe_highlight" name="finalizado" attrs="{'invisible': [('state','=','finalizado')]}"/>
+                        <button string="Rescinsion" type="object" class="oe_highlight" name="rescision" attrs="{'invisible': [('state','=','rescision')]}"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="fecha_fin"/>
+                            <field name="cliente_id"/>
+                            <field name="descripcion"/>
+                        </group>
+                        <notebook colspan="4">
+                            <page string="Servicios">
+                                <field name="contrato_cliente_detalle_ids" context="{'default_contrato_id':context.get('active_id',False)}"/>
+                            </page>
+                            <!--<page string="Proyectos">-->
+                                <!--<button name="%(project.open_view_project_all)d" string="Crear Proyecto" type="action" class="btn-link "/>-->
+                                <!--<field name="project_ids" widget="many2many" />-->
+                            <!--</page>-->
+                            <page string="Proyectos">
+                                <!--<button name="%(project.open_view_project_all)d" string="Crear Proyecto" type="action" class="btn-link "/>-->
+                                <field name="project2_ids" />
+                            </page>
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="contrato_cliente_tree_view" model="ir.ui.view">
+            <field name="name">contrato_cliente.tree</field>
+            <field name="model">certificados.contrato_cliente</field>
+            <field name="arch" type="xml">
+                <tree string="Contratos con clientes">
+                    <field name="name"/>
+                    <field name="fecha_fin"/>
+                    <field name="cliente_id"/>
+                    <!-- <field name="descripcion"/> -->
+                </tree>
+            </field>
+        </record>
+
+
+         <!-- detalle del los servicios en el contrato -->
+        <record model="ir.ui.view" id="contrato_cliente_detalle_form_view">
+            <field name="name">contrato_cliente_detalle.form</field>
+            <field name="model">certificados.contrato_cliente_detalle</field>
+            <field name="arch" type="xml">
+                <form string="Detalle Contrato Form">
+                    <sheet>
+                        <group>
+                            <field name="product_id" options="{'no_create':True, 'no_create_edit':True, 'no_open': True}" domain="[('serviciodeobra', '=', True)]"/>
+                            <field name="unidad_de_medida" readonly="1" force_save="1"/>
+                            <field name="price_unit"/>
+                            <field name="quantity"/>
+                            <field name="subtotal" readonly="1" force_save="1"/>
+                            <field name="cantidades_hechas" readonly="1" force_save="1"/>
+                            <field name="subtotales_hechas" readonly="1" force_save="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="contrato_cliente_detalle_tree_view" model="ir.ui.view">
+            <field name="name">contrato_cliente_detalle.tree</field>
+            <field name="model">certificados.contrato_cliente_detalle</field>
+            <field name="arch" type="xml">
+                <tree string="Contratos detalle con clientes">
+                    <field name="product_id"/>
+         <!-- <field name="fecha_fin"/> -->
+         <!-- <field name="cliente_id"/> -->
+         <!-- <field name="descripcion"/> -->
+                </tree>
+            </field>
+        </record>
+
+ <!--  Actiones ####################  -->
+        <record model="ir.actions.act_window" id="contrato_cliente_list_action">
+            <field name="name">contrato</field>
+                <field name="res_model">certificados.contrato_cliente</field>
+                <field name="view_type">form</field>
+                <field name="view_mode">tree,form</field>
+                <field name="context">{}</field>
+                <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Contrato con el cliente</p>
+            </field>
+        </record>
+ <!--  Menu  -->
+<menuitem id="main_obracivil_menu" name="Contrato Cliente"/>
+ <!--
+ A first level in the left side menu is needed
+         before using action= attribute
+-->
+<menuitem id="obracivil_menu" name="Contrato con Cliente" parent="main_obracivil_menu"/>
+ <!--
+ the following menuitem should appear *after*
+         its parent openacademy_menu and *after* its
+         action course_list_action
+-->
+<menuitem id="contrato_menu" name="Contrato" parent="obracivil_menu" action="contrato_cliente_list_action"/>
+ <!--
+<menuitem id="contrato_menu2" name="Contrato2" parent="obracivil_menu"
+-->
+ <!-- action="contrato_list_action"/> -->
+</data>
+</odoo>

@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_obra_civil_obra_civil,obra_civil.obra_civil,model_obra_civil_obra_civil,,1,0,0,0

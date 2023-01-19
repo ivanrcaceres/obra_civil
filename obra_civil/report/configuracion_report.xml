@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+
+        <report
+            id="certificado0101_reports"
+            model="obra_civil.certificado"
+            string="Certificado Actual como ultimo"
+            report_type="qweb-pdf"
+            name="obra_civil.batata"
+            file="obra_civil.certificado010_reports"
+            attachment_use="True"
+    />
+
+
+    </data>
+</odoo>

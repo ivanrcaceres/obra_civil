@@ -1,0 +1,34 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="certificados_quincena_form_view">
+                <field name="name">certificados_quincena.form</field>
+                <field name="model">certificados.quincena</field>
+                <field name="arch" type="xml">
+                    <form string="Quincena Form">
+                        <sheet>
+                            <group>
+                                <field name="name"/>
+                                <field name="fecha"/>
+                                <field name="observacion"/>
+                            </group>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+              <record id="certificados_quincena_tree_view" model="ir.ui.view">
+                    <field name="name">contrato_quincena.tree</field>
+                    <field name="model">certificados.quincena</field>
+                    <field name="arch" type="xml">
+                        <tree string="Quincena">
+                            <field name="name"/>
+                            <field name="fecha"/>
+                            <field name="observacion"/>
+                            <!--<field name="fecha_fin"/>-->
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+    </data>
+</odoo>

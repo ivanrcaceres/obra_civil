@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="certificados_avance_detalle_form_view">
+                <field name="name">certificados_avance_detalle.form</field>
+                <field name="model">certificados.avance_detalle</field>
+                <field name="arch" type="xml">
+                    <form string="Avance_detalle Form">
+                        <sheet>
+                            <group>
+
+
+                                <field name="product_id"  />
+                                <field name="project_id" invisible="1" />
+                                <field name="quantity"/>
+                                <!--<field name="quincena_id"  />-->
+                                <!--<field name="lugar_id"  />-->
+                            </group>
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+
+              <record id="certificados_avance_detalle_tree_view" model="ir.ui.view">
+                    <field name="name">contrato_avance_detalle.tree</field>
+                    <field name="model">certificados.avance_detalle</field>
+                    <field name="arch" type="xml">
+                        <tree editable="bottom">
+
+
+
+                            <field name="product_id"/>
+                            <field name="project_id" invisible="1" />
+                            <field name="quantity"/>
+                            <!--<field name="quincena_id"/>-->
+                            <!--<field name="lugar_id"/>-->
+                            <!--<field name="fecha_fin"/>-->
+                            <!--<field name="cliente_id"/>-->
+                            <!--<field name="descripcion"/>-->
+                        </tree>
+                    </field>
+            </record>
+    </data>
+</odoo>
